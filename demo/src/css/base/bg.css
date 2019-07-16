@@ -1,0 +1,5 @@
+/*---- 背景 ----*/
+.bg-main { background-color: var(--c-main) }
+.bg-w, .bg-fff, .bgfff { background-color: #fff } /* .bg-fff, .bgfff 已废弃 */
+.bg-semi { background-color: rgba(0, 0, 0, .5) } 
+.bg-tran { background-color: transparent }

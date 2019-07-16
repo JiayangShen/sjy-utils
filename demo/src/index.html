@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html data-skinType="{{skinType}}" class="{{ pageName }}" {{ pageScopeId }}>
+<head>
+  <title>{{ title }}</title>
+  <meta charset="utf-8">
+  <meta name="application-name" content="">
+  <meta name="creator" content="SJY">
+  <meta name="author" content="沈佳洋(SJY, https://github.com/JiayangShen)">
+  <meta name="description" content="">
+  <meta name="keywords" content="VUE,SSR">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+  <link rel="dns-prefetch" href="//res.weixin.com">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="bookmark" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="/affixes/images/logo_hualala_96.png">
+  <meta http-equiv="pragma" content="no-cache"> 
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+  <script class="skin-style">
+  (function()
+  {
+        var tpl =
+        '.-c, .-c-active.active, .-c-a:after, .-c-b:before, .minus, .plus { color: [[color]] }'+
+        '.-c2, .-c2-a:after { color: [[color2]] }'+
+        '.-bc, .-bc-a:after, .-bc-b:before, .-bc-active.active { background-color: [[color]]; }'+
+        '.-bc2, .-bc2-active.active { background-color: [[color2]] }'+
+        '.-bc3, .-bc3-b:before { background-color: [[color3]] }'+
+        '.-bdc { border-color: [[color]]!important }';
+        var skins = {
+            'default': { color: '#f60', color2: '#fb9b00', color3: '#ff4141' },
+            'red': { color: '#f03828', color2: '#fe5c2a', color3: '#d73628', filter: 'hue-rotate(-28deg) saturate(180%) brightness(96%)' },
+            'green': { color: '#39b300', color2: '#7dcd0b', color3: '#ff7011', filter: 'hue-rotate(70deg) saturate(93%) brightness(110%)' },
+            'blue': { color: '#0f99f1', color2: '#52bbf7', color3: '#ff4141', filter: 'hue-rotate(186deg) saturate(80%) brightness(106%)' },
+            'black': { color: '#333', color2: '#857252', color3: '#ff4141', filter: 'saturate(0) brightness(40%)' }
+        };
+        var skinType = document.documentElement.getAttribute('data-skinType') || 'default';
+        var skin = skins[skinType] || skins['default'];
+        if(skin.filter) tpl += '.-f, -f-active.active, .-f-a:after, .-f-b:before {-webkit-filter: [[filter]]; filter: [[filter]] }';
+        var css = tpl.replace(/\[\[(.+?)\]\]/g, function(m, g1){ return skin[g1] });
+        var style = document.createElement('style');
+        style.innerText = css;
+        var script = document.head.querySelector('.skin-style');
+        document.head.replaceChild(style, script);
+    })()
+    </script>
+  {{{ renderStyles() }}}
+  <style id="pageStyles">{{{ pageStyles }}}</style>
+  <script>if(!window.global) window.global = window</script>
+</head>
+<body>
+  <!--vue-ssr-outlet-->
+  {{{ renderState() }}}
+  {{{ renderScripts() }}}
+  {{{ pageModule }}}
+</body>
+</html>

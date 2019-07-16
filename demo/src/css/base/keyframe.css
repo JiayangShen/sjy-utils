@@ -1,0 +1,15 @@
+/* 动画帧 */
+@keyframes page-in {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+@keyframes page-out {
+    from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+@keyframes spin {
+    from { transform: rotate(0) }
+    to { transform: rotate(360deg) }
+}

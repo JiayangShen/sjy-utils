@@ -1,0 +1,8 @@
+/* 整体布局 */
+a:active:not(.disabled), .tap:active:not(.disabled), .btn:active:not(.disabled) { opacity: 0.7 }
+.tap-gray:active { background-color: #eee }
+
+.fade { transition: opacity .3s; }
+.fade-enter, .fade-leave-active { opacity: 0 }
+.slide-up-enter-active, .slide-up-leave-active { transition: transform .3s; }
+.slide-up-enter, .slide-up-leave-to { transform: translate3d(0, 100%, 0); }

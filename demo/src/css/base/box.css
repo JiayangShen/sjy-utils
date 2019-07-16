@@ -1,0 +1,8 @@
+/*---- 盒模型 ----*/
+.box, .bsbb { box-sizing: border-box }
+
+.db { display: block }
+.dn { display: none }
+.dib { display: inline-block }
+.dt { display: table }
+.vh { visibility: hidden; }

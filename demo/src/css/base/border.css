@@ -1,0 +1,16 @@
+/*---- 边框 ----*/
+.bdt-c { border-top: 1px solid #ccc }
+.bdt-d { border-top: 1px solid #ddd }
+.bdt-e { border-top: 1px solid #eee }
+
+.bdb-c { border-bottom: 1px solid #ccc }
+.bdb-d { border-bottom: 1px solid #ddd }
+.bdb-e { border-bottom: 1px solid #eee }
+
+.bdl-d { border-left: 1px solid #ddd }
+
+.bdn { border: none }
+
+.bdrs4 { border-radius: 4px }
+.bdrs6 { border-radius: 6px }
+.circle { border-radius: 50% }

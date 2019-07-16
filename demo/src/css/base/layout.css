@@ -1,0 +1,24 @@
+/* 布局 */
+.cover, .layer, .trans-layer { left: 0; top: 0; width: 100%; height: 100% }
+.layer { background-color: rgba(0, 0, 0, 0.6); z-index: 99; }
+.trans-layer { z-index: 99; }
+.cell, .dtc { display: table-cell; width: 0.1% }
+.cfx:after, .cfx:before { content: ''; display: table; clear: both }
+.vc:after { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; }
+.avc { position: absolute; top: 0; bottom: 0; margin-top: auto; margin-bottom: auto }
+.ahc { position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto }
+
+.two-row { display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow:hidden; }
+
+.fl { float: left }
+.fr { float: right }
+
+.ovh, .ofh { overflow: hidden }
+.ova, .ofa { overflow: auto }
+.ovs, .ofs { overflow: scroll }
+
+.ovya { overflow: auto }
+
+.vt, .vat { vertical-align: top } /* .vat 已废弃 */
+.vm, .vam { vertical-align: middle } /* .vam 已废弃 */
+.vb { vertical-align: bottom }

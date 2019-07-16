@@ -1,0 +1,14 @@
+/*---- 定位 ----*/
+.posr { position: relative }
+.posf { position: fixed }
+.posa { position: absolute }
+
+.t0 { top: 0 }
+.b0 { bottom: 0 }
+.l0 { left: 0 }
+.r0 { right: 0 }
+
+.z1 { z-index: 1 }
+.z2 { z-index: 2 }
+.z3 { z-index: 3 }
+.z-max { z-index: 99 }

@@ -1,0 +1,10 @@
+/*---- 文本 ----*/
+.tl { text-align: left; }
+.tc, .tac { text-align: center } /* .tac 已废弃 */
+.tr, .tar { text-align: right } /* .tar 已废弃 */
+
+.wrbw { word-wrap: break-word }
+.wbba { word-break: break-all; }
+
+.lh { line-height: 1 }
+.lh15 { line-height: 1.5 }

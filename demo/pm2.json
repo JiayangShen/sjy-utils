@@ -1,0 +1,5 @@
+{
+  "script"          : "./server.js",
+  "error_file"      : "./pm2/error.log",
+  "out_file"        : "./pm2/output.log"
+}

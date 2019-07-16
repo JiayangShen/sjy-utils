@@ -1,0 +1,8 @@
+/*---- 颜色 ----*/
+.c { color: #333 }                    /* color-main */
+.c-dg { color: #555 }                 /* color-dark-gray */
+.c-g { color: #777 }                  /* color-gray */
+.c-lg { color: #999 }                 /* color-light-gray */
+.c-main { color: var(--c-main) }
+.c-w, .c-fff, .cfff { color: #fff }   /* color-white */
+.c-b, .c-000, .c000 { color: #000 }   /* color-black */

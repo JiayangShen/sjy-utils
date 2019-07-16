@@ -1,0 +1,10 @@
+/*---- 字号 ----*/
+.f0 { font-size: 0 }
+.f-s { font-size: 12px }   /* font-size-small */
+.f { font-size: 14px }     /* font-size-main */
+.f-m { font-size: 16px }   /* font-size-middle */
+.f-mm { font-size: 18px }
+.f-b { font-size: 20px }   /* font-size-big */
+.f-bb { font-size: 24px }
+
+.b, .fwb { font-weight: bold }

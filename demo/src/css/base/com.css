@@ -1,0 +1,15 @@
+/* 小的组件类 */
+.empty-tip { padding-top: 50px; text-align: center; color: #787878; }
+.money:before { content: "￥"; font-size: .8em; }
+.money-minus:before { content: "-￥"; font-size: .7em; }
+.mult:before { content: "×"; font-size: .7em; }
+.point:after { content: "积分"; font-size: .8em; }
+.pic { background-position: center; background-size: cover; }
+
+.minus-btn:after, .plus-btn:before, .plus-btn:after
+ { content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto }
+.minus-btn:after { width: 16px; height: 2px; background: var(--c-main); }
+.plus-btn:before { width: 2px; height: 16px; background: #fff; }
+.plus-btn:after { width: 16px; height: 2px; background: #fff; }
+
+.ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
