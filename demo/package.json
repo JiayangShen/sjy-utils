@@ -1,14 +1,10 @@
 {
-  "name": "hualala-client-touch",
-  "description": "Hualala mobile web project",
-  "author": "JiayangShen <shn11160@gmail.com>",
+  "name": "sjy-demo-project",
+  "description": "sjy-demo-project description.",
+  "author": "JiayangShen <https://github.com/JiayangShen>",
   "private": true,
   "scripts": {
     "local": "npm run build-dev && npm run dev",
-    "_mu": "npm run build-dev && npm run start",
-    "_dohko": "npm run build && npm run start",
-    "mu": "npm run build-dev && cross-env NODE_ENV=production pm2 start pm2.json",
-    "dohko": "cross-env NODE_ENV=production pm2 start pm2.json",
     "dev": "node server",
     "start": "cross-env NODE_ENV=production node server",
     "build-dev": "npm run build:client:dev && npm run build:server:dev",
